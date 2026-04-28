@@ -6,8 +6,12 @@ public interface JavaApp {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Character: ");
 		char ch = sc.next().charAt(0);
-		sc.close();
 		Char.charVerifier(ch);
-		Char.charDisplayer(ch);
+		System.out.println("Enter the Start Point Character");
+		char s = sc.next().charAt(0);
+		System.out.println("Enter the End Point Character");
+		char e = sc.next().charAt(0);
+		sc.close();
+		Char.charDisplayer(s,e);
 	}
 }

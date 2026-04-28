@@ -35,8 +35,26 @@ public interface Char {
 		}
 	}
 	
-	public static void charDisplayer(char ch) {
-		
+	public static void charDisplayer(char s, char e) {
+		if(s<e) {
+			System.out.println("Forward Series");
+			System.out.println("--------------");
+			for(char ch=s; ch<=e;ch++) {
+				System.out.println(ch+" ");
+			}
+			System.out.println();
+		}
+		else if(s>e) {
+			System.out.println("Backward Series");
+			System.out.println("--------------");
+			for(char ch=s; ch>=e;ch--) {
+				System.out.println(ch+" ");
+			}
+			System.out.println();
+		}
+		else {
+			System.out.println("Invalid Series!");
+		}
 	}
 	
 }
